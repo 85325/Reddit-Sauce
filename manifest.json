@@ -1,0 +1,17 @@
+{
+  "name": "The Sauce",
+  "version": "1.0",
+  "description": "Extracts the sauce from the comments of NSFW posts.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "css": ["sauce.css"],
+      "js": ["jquery.min.js", "sauce.js"]
+    }
+  ],
+  "icons" : {
+    "128" : "icon-128.png"
+  },
+  "web_accessible_resources": ["hot.png", "mild.png"],
+  "manifest_version": 2
+}
